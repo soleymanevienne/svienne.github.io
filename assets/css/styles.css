@@ -610,3 +610,108 @@ img {
   font-size: 14px; /* Taille du texte */
   font-family: 'Carlito', Verdana, Geneva, sans-serif; /* Style de police */
 }
+.footer {
+  padding: 5px; /* Espacement intérieur */
+  display: flex; /* Utiliser Flexbox pour aligner les éléments */
+  justify-content: space-between; /* Répartir l'espace entre les éléments */
+  align-items: left; /* Centrer verticalement les éléments */
+}
+
+.footer__title {
+  margin: 0; /* Supprimer les marges par défaut */
+}
+
+.footer__social {
+  display: flex; /* Utiliser Flexbox pour aligner les icônes */
+}
+
+.footer__icon {
+  margin-right: 10px; /* Espacement entre les icônes */
+}
+
+.footer__copy {
+  margin: 0; /* Supprimer les marges par défaut */
+}
+.about__buttons-container {
+  text-align: right;
+  margin-right: 240px; /* Ajustez la valeur selon votre préférence */
+}
+
+/* Ajouter une classe spécifique aux boutons pour styliser uniquement ceux-ci */
+.about__buttons .button {
+  /* Vos styles CSS existants */
+  background-color: #007bff; /* Couleur de fond */
+  color: #fff; /* Couleur du texte */
+  padding: 10px 20px; /* Rembourrage */
+  border-radius: 5px; /* Bord arrondi */
+  border: none; /* Supprimer la bordure */
+  text-decoration: none; /* Supprimer la soulignement */
+  font-size: 16px; /* Taille de la police */
+  font-weight: bold; /* Gras */
+  transition: all 0.3s ease; /* Transition fluide */
+  
+  /* Ajouter l'ombre */
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3); /* Ombre */
+}
+
+/* Hover */
+.about__buttons .button:hover {
+  background-color: #0056b3; /* Couleur de fond au survol */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée au survol */
+}
+   /* Style pour centrer l'image */
+   .about_work__img {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.about_work__img img {
+  width: 200px; /* Définissez la largeur souhaitée */
+  height: auto; /* Gardez le ratio de l'image */
+}
+
+.about_work__img {
+  display: flex;
+  align-items:left ; /* Alignement vertical des éléments */
+}
+
+.about_work__img img {
+  width: 200px; /* Largeur de l'image principale */
+  height: auto; /* Gardez le ratio de l'image */
+}
+
+.arrow-image {
+  width: 20px; /* Largeur de l'image de la flèche */
+  height: auto; /* Gardez le ratio de l'image */
+  margin-left: 5px; /* Marge à gauche de l'image de la flèche */
+}
+
+ 
+.section-container {
+  border: 1px solid #ccc; /* Bordure solide grise */
+  border-radius: 10px; /* Coins arrondis */
+  padding: 20px; /* Espacement intérieur */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Ombre avec profondeur */
+  max-width: 1300px; /* Largeur maximale */
+  margin: 20px auto; /* Marge automatique sur les côtés */
+}
+
+
+.nav__logo {
+  display: inline-block;
+  width: 60px; /* Ajustez la taille du cadre selon vos besoins */
+  height: 60px; /* Ajustez la taille du cadre selon vos besoins */
+  border-radius: 50%; /* Rend le cadre circulaire */
+  border: 4px solid lightgrey; /* Augmente l'épaisseur et change la couleur en gris clair */
+  background-color: white; /* Fond blanc */
+  padding: 5px; /* Marge intérieure pour le logo */
+  box-sizing: border-box; /* Inclut la bordure dans les dimensions */
+  overflow: hidden; /* Empêche le contenu de dépasser */
+}
+.nav__logo img {
+  width: 100%; /* Ajuste la largeur de l'image pour qu'elle remplisse le cadre */
+  height: 100%; /* Permet à la hauteur de l'image de s'ajuster automatiquement pour maintenir les proportions */
+}
+
+
