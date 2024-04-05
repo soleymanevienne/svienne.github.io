@@ -240,8 +240,9 @@ img {
   transition: 0.3s;
 }
 .button:hover {
-  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8); /* Augmente la taille de l'ombre portée */
 }
+
 
 /* ===== ABOUT =====*/
 .about__container {
@@ -556,4 +557,56 @@ img {
 
 .work__description {
   margin-top: 10px; /* Ajoutez une marge au-dessus de la description */
+}
+
+.work__description {
+  text-align: center; /* Centre le texte à l'intérieur du paragraphe */
+  padding: 0 20px; /* Ajoute un espacement de 20 pixels à gauche et à droite du texte */
+}
+
+.work__img {
+  text-align: center;
+}
+.work__img h3 {
+  color: darkslategrey;
+  font-family: 'Carlito', Verdana, Geneva, sans-serif;
+  text-indent: 1mm;
+  margin-bottom: 5px; /* Espacement entre le titre et l'image */
+}
+
+.home__social {
+  border: 1px solid #ccc; /* Ajoute une bordure de 1 pixel solide avec une couleur grise */
+  border-radius: 10px; /* Arrondi les coins du cadre */
+  padding: 10px; /* Ajoute un peu d'espace intérieur pour plus de visibilité */
+}
+
+.home__social-icon:last-child::after {
+  content: ''; /* Ajoute un contenu vide */
+  position: absolute; /* Position absolue pour positionner le pseudo-élément par rapport à l'élément parent */
+  top: 50%; /* Positionne le haut du pseudo-élément au milieu de l'élément parent */
+  right: -5px; /* Positionne le pseudo-élément juste à droite de l'icône */
+  transform: translateY(-50%); /* Déplace le pseudo-élément vers le haut de moitié de sa propre hauteur pour le centrer verticalement */
+  height: 20px; /* Hauteur du pseudo-élément */
+  width: 1px; /* Largeur du pseudo-élément (épaisseur de la bordure) */
+  background-color: #ccc; /* Couleur de la bordure */
+}
+
+.home__social {
+  display: flex;
+  align-items: center; /* Aligne les éléments enfants verticalement */
+  justify-content: space-between; /* Répartit les éléments enfants horizontalement */
+}
+
+.home__social-info {
+  display: flex;
+  align-items: center; /* Aligne les éléments enfants verticalement */
+}
+
+.home__social-info img {
+  margin-right: 5px; /* Ajoute un petit espace entre le logo et le texte */
+}
+
+.home__social-info span {
+  font-size: 14px; /* Taille du texte */
+  font-family: 'Carlito', Verdana, Geneva, sans-serif; /* Style de police */
 }
