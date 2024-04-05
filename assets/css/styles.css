@@ -44,6 +44,7 @@ html {
 }
 
 body {
+  background: #ffffff;
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
@@ -674,6 +675,8 @@ img {
 .about_work__img {
   display: flex;
   align-items:left ; /* Alignement vertical des éléments */
+  width: auto; /* Définissez la largeur souhaitée */
+  height: auto; /* Gardez le ratio de l'image */
 }
 
 .about_work__img img {
@@ -713,5 +716,8 @@ img {
   width: 100%; /* Ajuste la largeur de l'image pour qu'elle remplisse le cadre */
   height: 100%; /* Permet à la hauteur de l'image de s'ajuster automatiquement pour maintenir les proportions */
 }
+
+
+
 
 
