@@ -718,6 +718,63 @@ img {
 }
 
 
+/* Réduction de la taille du logo de la barre de navigation pour les téléphones */
+.nav__logo {
+  width: 40px;
+  height: 40px;
+}
+
+/* Réduction de la taille de la section titre pour les téléphones */
+.section-title {
+  font-size: 1.5rem;
+}
+
+/* Ajustement de la marge et de l'espacement dans les sections pour les téléphones */
+.section {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+/* Réduction de la taille de la police pour les téléphones */
+body {
+  font-size: 16px;
+}
+
+/* Ajustement de la taille de l'image dans la section "À propos" pour les téléphones */
+.about__img img {
+  width: 150px;
+}
+
+/* Ajustement de la taille de l'image dans la section "Compétences" pour les téléphones */
+.skills__img {
+  width: 100px;
+}
+
+/* Ajustement de la taille de l'image dans la section "Travail" pour les téléphones */
+.work__img img {
+  width: 100%;
+}
+
+/* Ajustement de la taille de l'image dans la section "Contact" pour les téléphones */
+.contact__img img {
+  width: 150px;
+}
+
+/* Ajustement de l'affichage de home_blob sur les téléphones */
+@media screen and (max-width: 768px) {
+  .home__img {
+    position: relative;
+    z-index: 1; /* Assure que home__img est au-dessus de home__social */
+  }
+
+  .home__blob {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transform: translateX(-50%);
+    z-index: 60; /* Assure que home_blob est au-dessus de home__img */
+  }
+}
 
 
 
