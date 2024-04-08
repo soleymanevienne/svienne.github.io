@@ -575,27 +575,13 @@ img {
   margin-bottom: 5px; /* Espacement entre le titre et l'image */
 }
 
-.home__social {
-  border: 1px solid #ccc; /* Ajoute une bordure de 1 pixel solide avec une couleur grise */
-  border-radius: 10px; /* Arrondi les coins du cadre */
-  padding: 10px; /* Ajoute un peu d'espace intérieur pour plus de visibilité */
-}
 
-.home__social-icon:last-child::after {
-  content: ''; /* Ajoute un contenu vide */
-  position: absolute; /* Position absolue pour positionner le pseudo-élément par rapport à l'élément parent */
-  top: 50%; /* Positionne le haut du pseudo-élément au milieu de l'élément parent */
-  right: -5px; /* Positionne le pseudo-élément juste à droite de l'icône */
-  transform: translateY(-50%); /* Déplace le pseudo-élément vers le haut de moitié de sa propre hauteur pour le centrer verticalement */
-  height: 20px; /* Hauteur du pseudo-élément */
-  width: 1px; /* Largeur du pseudo-élément (épaisseur de la bordure) */
-  background-color: #ccc; /* Couleur de la bordure */
-}
+
 
 .home__social {
   display: flex;
-  align-items: center; /* Aligne les éléments enfants verticalement */
-  justify-content: space-between; /* Répartit les éléments enfants horizontalement */
+  align-items: left; /* Aligne les éléments enfants verticalement */
+  justify-content:flex-start /* Répartit les éléments enfants horizontalement */
 }
 
 .home__social-info {
@@ -775,6 +761,7 @@ body {
     z-index: 60; /* Assure que home_blob est au-dessus de home__img */
   }
 }
+
 
 
 
