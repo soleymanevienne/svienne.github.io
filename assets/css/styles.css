@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 /*===== VARIABLES CSS =====*/
 :root {
-  --header-height: 3rem;
+  --header-height: 4rem;
   --font-semi: 600;
   /*===== Colores =====*/
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
@@ -108,8 +108,8 @@ img {
 .l-header {
   width: 100%;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
   z-index: var(--z-fixed);
   background-color: #fff;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
@@ -164,6 +164,8 @@ img {
   font-size: 1.5rem;
   cursor: pointer;
 }
+
+
 
 /*Active menu*/
 .active-link::after {
@@ -239,7 +241,11 @@ img {
   font-weight: var(--font-semi);
   border-radius: 0.5rem;
   transition: 0.3s;
+  margin-bottom: 20px; /* Ajoute une marge en bas de chaque bouton */
+  display:inline-block; /* Permet à chaque bouton de s'afficher sur une ligne distincte */
 }
+
+
 .button:hover {
   box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8); /* Augmente la taille de l'ombre portée */
 }
@@ -319,7 +325,7 @@ img {
 
 /* ===== WORK =====*/
 .work__container {
-  row-gap: 80rem;
+  row-gap: 1rem;
 }
 .work__img {
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
@@ -378,20 +384,13 @@ img {
 }
 
 /* ===== MEDIA QUERIES=====*/
-@media screen and (max-width: 320px) {
-  .home {
-    row-gap: 2rem;
-  }
-  .home__img {
-    width: 200px;
-  }
-}
-@media screen and (min-width: 576px) {
+
+@media screen and (min-width: 500px) {
   .home {
     padding: 4rem 0 2rem;
   }
   .home__social {
-    padding-top: 0;
+    padding-top: 10;
     padding-bottom: 2.5rem;
     flex-direction: row;
     align-self: flex-end;
@@ -426,8 +425,6 @@ img {
   .contact__container {
     justify-items: center;
   }
-}
-@media screen and (min-width: 768px) {
   body {
     margin: 0;
   }
@@ -442,9 +439,7 @@ img {
     width: 80px;
     top: 3rem;
   }
-  .nav {
-    height: calc(var(--header-height) + 1.5rem);
-  }
+ 
   .nav__list {
     display: flex;
     padding-top: 0;
@@ -482,8 +477,6 @@ img {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
   }
-}
-@media screen and (min-width: 992px) {
   .bd-grid {
     margin-left: auto;
     margin-right: auto;
@@ -494,6 +487,13 @@ img {
   .home__img {
     width: 450px;
   }
+    .l-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* Autres styles */
+  }
+  
 }
 
 .skill-icons--gmail-dark {
@@ -514,18 +514,6 @@ img {
 .home__text {
   margin-bottom: 20px; /* Vous pouvez ajuster la valeur selon vos besoins */
 }
-.home {
-  margin-top: -150px; /* Ajustez cette valeur selon vos préférences */
-}
-.home__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.home {
-  position: relative;
-}
-
 .home::after {
   content: '';
   position: absolute;
@@ -575,13 +563,27 @@ img {
   margin-bottom: 5px; /* Espacement entre le titre et l'image */
 }
 
+.home__social {
+  border: 1px solid #ccc; /* Ajoute une bordure de 1 pixel solide avec une couleur grise */
+  border-radius: 10px; /* Arrondi les coins du cadre */
+  padding: 10px; /* Ajoute un peu d'espace intérieur pour plus de visibilité */
+}
 
-
+.home__social-icon:last-child::after {
+  content: ''; /* Ajoute un contenu vide */
+  position: absolute; /* Position absolue pour positionner le pseudo-élément par rapport à l'élément parent */
+  top: 50%; /* Positionne le haut du pseudo-élément au milieu de l'élément parent */
+  right: -5px; /* Positionne le pseudo-élément juste à droite de l'icône */
+  transform: translateY(-50%); /* Déplace le pseudo-élément vers le haut de moitié de sa propre hauteur pour le centrer verticalement */
+  height: 20px; /* Hauteur du pseudo-élément */
+  width: 1px; /* Largeur du pseudo-élément (épaisseur de la bordure) */
+  background-color: #ccc; /* Couleur de la bordure */
+}
 
 .home__social {
   display: flex;
-  align-items: left; /* Aligne les éléments enfants verticalement */
-  justify-content:flex-start /* Répartit les éléments enfants horizontalement */
+  align-items: center; /* Aligne les éléments enfants verticalement */
+  justify-content: space-between; /* Répartit les éléments enfants horizontalement */
 }
 
 .home__social-info {
@@ -686,82 +688,84 @@ img {
   margin: 20px auto; /* Marge automatique sur les côtés */
 }
 
-
 .nav__logo {
   display: inline-block;
-  width: 60px; /* Ajustez la taille du cadre selon vos besoins */
-  height: 60px; /* Ajustez la taille du cadre selon vos besoins */
+  width: 50px; /* Ajustez la taille du cadre selon vos besoins */
+  height: 50px; /* Ajustez la taille du cadre selon vos besoins */
   border-radius: 50%; /* Rend le cadre circulaire */
-  border: 4px solid lightgrey; /* Augmente l'épaisseur et change la couleur en gris clair */
+  border: 4px solid rgb(154, 149, 221); /* Augmente l'épaisseur et change la couleur en gris clair */
   background-color: white; /* Fond blanc */
-  padding: 5px; /* Marge intérieure pour le logo */
-  box-sizing: border-box; /* Inclut la bordure dans les dimensions */
+  padding: 0px; /* Marge intérieure pour le logo */
   overflow: hidden; /* Empêche le contenu de dépasser */
+  object-fit: cover; /* Ajuste l'image pour couvrir complètement le cadre, en conservant les proportions */
+  transition: transform 0.3s ease; /* Animation de transition pour l'effet de zoom */
 }
+
+
 .nav__logo img {
   width: 100%; /* Ajuste la largeur de l'image pour qu'elle remplisse le cadre */
   height: 100%; /* Permet à la hauteur de l'image de s'ajuster automatiquement pour maintenir les proportions */
+  object-fit: cover; /* Ajuste l'image pour couvrir complètement le cadre, en conservant les proportions */
 }
 
-
-/* Réduction de la taille du logo de la barre de navigation pour les téléphones */
-.nav__logo {
-  width: 40px;
-  height: 40px;
+@media (max-device-width:768px) and (orientation: landscape) {
+  html {
+   -webkit-text-size-adjust: 100%;
+   -ms-text-size-adjust: 100%;
+  }
 }
-
-/* Réduction de la taille de la section titre pour les téléphones */
-.section-title {
-  font-size: 1.5rem;
-}
-
-/* Ajustement de la marge et de l'espacement dans les sections pour les téléphones */
-.section {
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-}
-
-/* Réduction de la taille de la police pour les téléphones */
-body {
-  font-size: 16px;
-}
-
-/* Ajustement de la taille de l'image dans la section "À propos" pour les téléphones */
-.about__img img {
-  width: 150px;
-}
-
-/* Ajustement de la taille de l'image dans la section "Compétences" pour les téléphones */
-.skills__img {
-  width: 100px;
-}
-
-/* Ajustement de la taille de l'image dans la section "Travail" pour les téléphones */
-.work__img img {
-  width: 100%;
-}
-
-/* Ajustement de la taille de l'image dans la section "Contact" pour les téléphones */
-.contact__img img {
-  width: 150px;
-}
-
-/* Ajustement de l'affichage de home_blob sur les téléphones */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 514px) {
   .home__img {
-    position: relative;
-    z-index: 1; /* Assure que home__img est au-dessus de home__social */
+    display: flex;
+    justify-content: flex-end; /* Aligner le contenu à droite */
+    align-items: flex-start; /* Aligner le contenu en haut */
+    margin-top: 20px; /* Marge supérieure pour l'espace */
   }
 
   .home__blob {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    transform: translateX(-50%);
-    z-index: 60; /* Assure que home_blob est au-dessus de home__img */
+    width: 100px; /* Définir une largeur plus petite */
+    height: 10; /* Laisser la hauteur s'ajuster automatiquement */
+    margin-top: 1000px; /* Ajuster la marge supérieure pour déplacer l'élément vers le bas */
+    margin-right: 10px; /* Marge à droite pour l'espace */
+  }
+
+  .home__social {
+    display: flex;
+    flex-direction: row; /* Alignement horizontal */
+    justify-content: flex-start; /* Alignement à gauche */
+    align-items: center; /* Centrage vertical */
+    margin-top: 20px; /* Marge supérieure */
+  }
+
+  .home__social-icon {
+    margin-right: 10px; /* Marge entre les icônes */
   }
 }
+@media screen and (max-width: 514px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
 
+  .footer__title {
+    font-size: 12px; /* Taille de police plus petite pour le titre */
+  }
 
+  .footer__social {
+    margin-top: 10px; /* Marge supérieure entre le titre et les icônes */
+  }
+
+  .footer__icon {
+    margin: 0 5px; /* Marge horizontale entre les icônes */
+  }
+
+  .footer__copy {
+    font-size: 7px; /* Taille de police plus petite pour le texte de copyright */
+    margin-top: 1px; /* Marge supérieure entre les icônes et le texte de copyright */
+  }
+}
 
 
