@@ -720,7 +720,7 @@ img {
   font-weight: bold;
   transition: all 0.3s ease;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
-  width: 100%; /* Pleine largeur pour chaque bouton */
+  width: 50%; /* Pleine largeur pour chaque bouton */
 }
 
 .button:hover {
