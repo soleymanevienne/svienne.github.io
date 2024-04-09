@@ -237,11 +237,11 @@ img {
   display: inline-block;
   background-color: var(--first-color);
   color: #fff;
-  padding: 0.75rem 2.5rem;
+  padding: 0.90rem 8rem;
   font-weight: var(--font-semi);
-  border-radius: 0.5rem;
+  border-radius: 0.8rem;
   transition: 0.3s;
-  margin-bottom: 20px; /* Ajoute une marge en bas de chaque bouton */
+  margin-bottom: 10px; /* Ajoute une marge en bas de chaque bouton */
   display:inline-block; /* Permet à chaque bouton de s'afficher sur une ligne distincte */
 }
 
@@ -250,22 +250,6 @@ img {
   box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8); /* Augmente la taille de l'ombre portée */
 }
 
-
-/* ===== ABOUT =====*/
-.about__container {
-  row-gap: 2rem;
-  text-align: center;
-}
-.about__subtitle {
-  margin-bottom: var(--mb-2);
-}
-.about__img {
-  justify-self: center;
-}
-.about__img img {
-  width: 200px;
-  border-radius: 0.5rem;
-}
 
 /* ===== SKILLS =====*/
 .skills__container {
@@ -403,11 +387,6 @@ img {
     width: 300px;
     bottom: 25%;
   }
-  .about__container {
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    text-align: initial;
-  }
   .skills__container {
     grid-template-columns: 0.7fr;
     justify-content: center;
@@ -460,12 +439,6 @@ img {
   .home__img {
     width: 400px;
     bottom: 10%;
-  }
-  .about__container {
-    padding-top: 2rem;
-  }
-  .about__img img {
-    width: 300px;
   }
   .skills__container {
     grid-template-columns: repeat(2, 1fr);
@@ -621,57 +594,6 @@ img {
 .footer__copy {
   margin: 0; /* Supprimer les marges par défaut */
 }
-.about__buttons-container {
-  text-align: right;
-  margin-right: 240px; /* Ajustez la valeur selon votre préférence */
-}
-
-/* Ajouter une classe spécifique aux boutons pour styliser uniquement ceux-ci */
-.about__buttons .button {
-  /* Vos styles CSS existants */
-  background-color: #007bff; /* Couleur de fond */
-  color: #fff; /* Couleur du texte */
-  padding: 10px 20px; /* Rembourrage */
-  border-radius: 5px; /* Bord arrondi */
-  border: none; /* Supprimer la bordure */
-  text-decoration: none; /* Supprimer la soulignement */
-  font-size: 16px; /* Taille de la police */
-  font-weight: bold; /* Gras */
-  transition: all 0.3s ease; /* Transition fluide */
-  
-  /* Ajouter l'ombre */
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3); /* Ombre */
-}
-
-/* Hover */
-.about__buttons .button:hover {
-  background-color: #0056b3; /* Couleur de fond au survol */
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée au survol */
-}
-   /* Style pour centrer l'image */
-   .about_work__img {
-    display: flex;
-    justify-content: left;
-    align-items: flex-start;
-}
-
-.about_work__img img {
-  width: 200px; /* Définissez la largeur souhaitée */
-  height: auto; /* Gardez le ratio de l'image */
-}
-
-.about_work__img {
-  display: flex;
-  align-items:left ; /* Alignement vertical des éléments */
-  width: auto; /* Définissez la largeur souhaitée */
-  height: auto; /* Gardez le ratio de l'image */
-}
-
-.about_work__img img {
-  width: 200px; /* Largeur de l'image principale */
-  height: auto; /* Gardez le ratio de l'image */
-}
-
 .arrow-image {
   width: 20px; /* Largeur de l'image de la flèche */
   height: auto; /* Gardez le ratio de l'image */
@@ -723,11 +645,12 @@ img {
   }
 
   .home__blob {
-    width: 100px; /* Définir une largeur plus petite */
-    height: 10; /* Laisser la hauteur s'ajuster automatiquement */
-    margin-top: 1000px; /* Ajuster la marge supérieure pour déplacer l'élément vers le bas */
+    width: 50px; /* Définir une largeur plus petite */
+    height: 70px; /* Laisser la hauteur s'ajuster automatiquement */
+    margin-top: 100px; /* Ajuster la marge supérieure pour déplacer l'élément vers le bas */
     margin-right: 10px; /* Marge à droite pour l'espace */
   }
+  
 
   .home__social {
     display: flex;
@@ -738,7 +661,7 @@ img {
   }
 
   .home__social-icon {
-    margin-right: 10px; /* Marge entre les icônes */
+    margin-right: 30px; /* Marge entre les icônes */
   }
 }
 @media screen and (max-width: 514px) {
@@ -751,7 +674,7 @@ img {
   }
 
   .footer__title {
-    font-size: 12px; /* Taille de police plus petite pour le titre */
+    font-size: 10px; /* Taille de police plus petite pour le titre */
   }
 
   .footer__social {
@@ -769,3 +692,50 @@ img {
 }
 
 
+
+
+
+/* ===== ABOUT =====*/
+
+/* Pour aligner et espacer les boutons dans about__buttons-container */
+.about__buttons-container {
+  display: flex;
+  justify-content: flex-end; /* Aligner les boutons à droite */
+  margin-right: 20px; /* Ajustez la marge à votre préférence */
+}
+
+.about__buttons {
+  display: flex;
+  gap: 20px; /* Espacement entre les boutons */
+}
+.button {
+  /* Styles des boutons */
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+  width: 100%; /* Pleine largeur pour chaque bouton */
+}
+
+.button:hover {
+  background-color: #0056b3;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 514px) {
+  .about__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les boutons horizontalement */
+    gap: 10px; /* Espacement entre les boutons */
+  }
+
+  .button {
+    width: 100%; /* Pleine largeur pour chaque bouton */
+  }
+}
