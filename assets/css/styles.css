@@ -25,6 +25,22 @@
   --z-back: -10;
   --z-fixed: 100;
 }
+
+
+  /*===== z index =====*/
+
+  
+  
+
+
+
+
+
+
+
+
+  /*===== z index =====*/
+
 @media screen and (min-width: 968px) {
   :root {
     --big-font-size: 3.5rem;
@@ -32,6 +48,12 @@
     --normal-font-size: 1rem;
     --smaller-font-size: .875rem;
   }
+  .section {
+    max-width: 100%;
+    padding: 4rem 20px; /* Ajuste les rembourrages pour centrer le contenu */
+  }
+  
+
 }
 
 /*===== BASE =====*/
