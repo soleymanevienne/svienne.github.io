@@ -795,4 +795,44 @@ img {
   transform: translateX(10px); /* Décaler légèrement à droite */
   border-radius: 20px; /* Coins arrondis */
 }
-
+.about_work__img img {
+  width: 250px; /* La largeur que vous souhaitez pour vos images */
+  height: auto; /* Cela gardera le rapport hauteur/largeur des images */
+  margin-left: auto;
+}
+@media (max-width: 514px) {
+  /* ABOUT */
+  .about__img img {
+      max-width: 90%; /* Ajuster pour occuper la majorité de la largeur */
+      height: auto; /* Garde l'aspect ratio de l'image */
+      display: block; /* Assurez-vous que les images s'affichent correctement */
+      margin: 10px auto; /* Centre l'image horizontalement avec de l'espace en haut et en bas */
+  }
+  .about__container {
+      flex-direction: column; /* Changez en colonne pour les écrans plus petits */
+      padding: 10px; /* Ajoutez un peu de padding sur les côtés */
+  }
+  .about__buttons-container {
+      flex-direction: column; /* Boutons empilés verticalement */
+      margin-top: 10px; /* Espacement au-dessus des boutons */
+  }
+  .section-title {
+      font-size: 1.5rem; /* Diminuez la taille du texte pour les petits écrans */
+      text-align: center; /* Centre le titre */
+  }
+  .about__banner {
+      padding: 5px; /* Réduisez le padding */
+      width: 90%; /* Utilisez toute la largeur disponible */
+      margin-top: 5px; /* Réduisez l'espace au-dessus */
+      transform: none; /* Annulez le décalage à droite */
+      margin-left: auto; /* Centre le banner */
+      margin-right: auto; /* Centre le banner */
+  }
+  .about_work__img img {
+    width: 0%; /* Utilisez la pleine largeur pour les images dans le travail */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centrez les images sans marge supplémentaire */
+    margin-top: 10px; /* Espace au-dessus de l'image */
+}
+}
