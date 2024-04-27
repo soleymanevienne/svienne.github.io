@@ -836,3 +836,33 @@ img {
     margin-top: 10px; /* Espace au-dessus de l'image */
 }
 }
+/* CARREER */
+
+.about_carreer__img img {
+  max-width: 400px; /* Ou la largeur maximale que vous souhaitez pour l'image */
+  width: auto; /* Cela permettra à l'image de s'étendre à la largeur maximale */
+  height: auto; /* Pour maintenir le ratio */
+  display: block; /* L'image sera traitée comme un bloc */
+  margin: 0 auto; /* Centrer l'image dans son conteneur */
+}
+
+
+
+
+
+.about_career__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Espacement égal entre les éléments */
+}
+
+.about_career__img {
+  flex: 8; /* Les images prendront une part égale de l'espace disponible */
+  max-width: 200px; /* Ou la taille fixe que vous souhaitez pour les images */
+  margin: 10px;
+}
+
+.text-container {
+  flex: 3; /* Les conteneurs de texte prendront plus d'espace que les images */
+  margin: 10px;
+}
