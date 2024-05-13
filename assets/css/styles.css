@@ -50,7 +50,7 @@
   }
   .section {
     max-width: 100%;
-    padding: 4rem 20px; /* Ajuste les rembourrages pour centrer le contenu */
+    padding: 4rem 20px;
   }
   
 
@@ -210,7 +210,7 @@ img {
   position: relative;
   row-gap: 5rem;
   padding: 4rem 0 5rem;
-  padding-top: 2rem; /* Ajoutez un padding-top pour compenser la marge négative */
+  padding-top: 2rem;
   margin-top: -60px;
 }
 .home__data {
@@ -220,7 +220,7 @@ img {
 .home__title {
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-5);
-  margin-top: var(--mb-23); /* Ajustez cette valeur selon vos préférences */
+  margin-top: var(--mb-23); 
 }
 
 .home__title-color {
@@ -250,7 +250,7 @@ img {
   margin-top: -120px;
 }
 .home__blob-img {
-  width: 430px; /* Ajustez cette valeur selon vos préférences pour obtenir le niveau de zoom souhaité */
+  width: 430px; 
 }
 
 
@@ -263,13 +263,12 @@ img {
   font-weight: var(--font-semi);
   border-radius: 0.8rem;
   transition: 0.3s;
-  margin-bottom: 10px; /* Ajoute une marge en bas de chaque bouton */
-  display:inline-block; /* Permet à chaque bouton de s'afficher sur une ligne distincte */
+  margin-bottom: 10px; 
+  display:inline-block; 
 }
 
-
 .button:hover {
-  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8); /* Augmente la taille de l'ombre portée */
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8); 
 }
 
 
@@ -501,13 +500,13 @@ img {
 }
 
 .logo-gmail {
-  margin-top: 5px; /* Ajustez cette valeur selon vos besoins pour aligner verticalement le logo Gmail */
+  margin-top: 5px;
 }
 .logo-linkedin, .logo-gmail {
-  margin-top: 5px; /* Ajustez cette valeur selon vos besoins pour aligner verticalement les logos */
+  margin-top: 5px; 
 }
 .home__text {
-  margin-bottom: 20px; /* Vous pouvez ajuster la valeur selon vos besoins */
+  margin-bottom: 20px; 
 }
 .home::after {
   content: '';
@@ -515,141 +514,138 @@ img {
   top: -1000;
   right: 1000;
   bottom: 0;
-  left: 50%; /* Ajustez cette valeur si nécessaire */
-  background-image: url('assets\img\about-removebg-preview.png'); /* Ajoutez l'image pour le home blob */
+  left: 50%; 
+  background-image: url('assets\img\about-removebg-preview.png'); 
   background-size: cover;
   z-index: -1;
 }
 .home__social {
   display: flex;
-  align-items: center; /* Alignement vertical des éléments */
+  align-items: center; 
 }
 
 .home__social-icon {
-  margin-right: 10px; /* Marge entre les icônes */
+  margin-right: 10px; 
 }
 
 /* Effet de survol */
 .home__social-icon:hover {
-  transform: scale(1.2); /* Ajustez la taille selon votre choix */
-}
+  transform: scale(1.2); 
 .work__img img {
-  max-width: 100%; /* Définissez une largeur maximale de 100% pour que l'image s'adapte à la largeur de son conteneur */
-  max-height: 100%; /* Définissez une hauteur maximale de 100% pour que l'image s'adapte à la hauteur de son conteneur */
-  object-fit: contain; /* Redimensionnez l'image pour qu'elle s'ajuste entièrement à l'intérieur de son conteneur tout en conservant son ratio d'aspect */
+  max-width: 100%; 
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .work__description {
-  margin-top: 10px; /* Ajoutez une marge au-dessus de la description */
+  margin-top: 10px; 
 }
 
 .work__description {
-  text-align: center; /* Centre le texte à l'intérieur du paragraphe */
-  padding: 0 20px; /* Ajoute un espacement de 20 pixels à gauche et à droite du texte */
+  text-align: center; 
+  padding: 0 20px;
 }
 
 .work__img {
   text-align: center;
 }
+}
 .work__img h3 {
   color: darkslategrey;
   font-family: 'Carlito', Verdana, Geneva, sans-serif;
   text-indent: 1mm;
-  margin-bottom: 5px; /* Espacement entre le titre et l'image */
+  margin-bottom: 5px; 
 }
-
 .home__social {
-  border: 1px solid #ccc; /* Ajoute une bordure de 1 pixel solide avec une couleur grise */
-  border-radius: 10px; /* Arrondi les coins du cadre */
-  padding: 10px; /* Ajoute un peu d'espace intérieur pour plus de visibilité */
+  border: 1px solid #ccc; 
+  border-radius: 10px; 
+  padding: 10px;
 }
 
 .home__social-icon:last-child::after {
-  content: ''; /* Ajoute un contenu vide */
-  position: absolute; /* Position absolue pour positionner le pseudo-élément par rapport à l'élément parent */
-  top: 50%; /* Positionne le haut du pseudo-élément au milieu de l'élément parent */
-  right: -5px; /* Positionne le pseudo-élément juste à droite de l'icône */
-  transform: translateY(-50%); /* Déplace le pseudo-élément vers le haut de moitié de sa propre hauteur pour le centrer verticalement */
-  height: 20px; /* Hauteur du pseudo-élément */
-  width: 1px; /* Largeur du pseudo-élément (épaisseur de la bordure) */
-  background-color: #ccc; /* Couleur de la bordure */
+  content: ''; 
+  position: absolute; 
+  top: 50%; 
+  right: -5px; 
+  transform: translateY(-50%); 
+  height: 20px; 
+  width: 1px;
+  background-color: #ccc; 
 }
 
 .home__social {
   display: flex;
-  align-items: center; /* Aligne les éléments enfants verticalement */
-  justify-content: space-between; /* Répartit les éléments enfants horizontalement */
+  align-items: center; 
+  justify-content: space-between;
 }
 
 .home__social-info {
   display: flex;
-  align-items: center; /* Aligne les éléments enfants verticalement */
+  align-items: center; 
 }
 
 .home__social-info img {
-  margin-right: 5px; /* Ajoute un petit espace entre le logo et le texte */
+  margin-right: 5px; 
 }
 
 .home__social-info span {
-  font-size: 14px; /* Taille du texte */
-  font-family: 'Carlito', Verdana, Geneva, sans-serif; /* Style de police */
+  font-size: 14px; 
+  font-family: 'Carlito', Verdana, Geneva, sans-serif; 
 }
 .footer {
-  padding: 5px; /* Espacement intérieur */
-  display: flex; /* Utiliser Flexbox pour aligner les éléments */
-  justify-content: space-between; /* Répartir l'espace entre les éléments */
-  align-items: left; /* Centrer verticalement les éléments */
+  padding: 5px; 
+  display: flex; 
+  justify-content: space-between;
+  align-items: left; 
 }
 
 .footer__title {
-  margin: 0; /* Supprimer les marges par défaut */
+  margin: 0; 
 }
 
 .footer__social {
-  display: flex; /* Utiliser Flexbox pour aligner les icônes */
+  display: flex; 
 }
 
 .footer__icon {
-  margin-right: 10px; /* Espacement entre les icônes */
+  margin-right: 10px; 
 }
 
 .footer__copy {
-  margin: 0; /* Supprimer les marges par défaut */
+  margin: 0; 
 }
 .arrow-image {
-  width: 20px; /* Largeur de l'image de la flèche */
-  height: auto; /* Gardez le ratio de l'image */
-  margin-left: 5px; /* Marge à gauche de l'image de la flèche */
+  width: 20px; 
+  height: auto; 
+  margin-left: 5px; 
 }
-
  
 .section-container {
-  border: 1px solid #ccc; /* Bordure solide grise */
-  border-radius: 10px; /* Coins arrondis */
-  padding: 20px; /* Espacement intérieur */
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Ombre avec profondeur */
-  max-width: 1300px; /* Largeur maximale */
-  margin: 20px auto; /* Marge automatique sur les côtés */
+  border: 1px solid #ccc; 
+  border-radius: 10px; 
+  padding: 20px; 
+  max-width: 1300px;
+  margin: 20px auto;
 }
 
 .nav__logo {
   display: inline-block;
-  width: 50px; /* Ajustez la taille du cadre selon vos besoins */
-  height: 50px; /* Ajustez la taille du cadre selon vos besoins */
-  border-radius: 50%; /* Rend le cadre circulaire */
-  border: 4px solid rgb(154, 149, 221); /* Augmente l'épaisseur et change la couleur en gris clair */
-  background-color: white; /* Fond blanc */
-  padding: 0px; /* Marge intérieure pour le logo */
-  overflow: hidden; /* Empêche le contenu de dépasser */
-  object-fit: cover; /* Ajuste l'image pour couvrir complètement le cadre, en conservant les proportions */
-  transition: transform 0.3s ease; /* Animation de transition pour l'effet de zoom */
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%; 
+  border: 4px solid rgb(154, 149, 221); 
+  background-color: white; 
+  padding: 0px;
+  overflow: hidden; 
+  object-fit: cover; 
+  transition: transform 0.3s ease;
 }
 
 
 .nav__logo img {
-  width: 100%; /* Ajuste la largeur de l'image pour qu'elle remplisse le cadre */
-  height: 100%; /* Permet à la hauteur de l'image de s'ajuster automatiquement pour maintenir les proportions */
-  object-fit: cover; /* Ajuste l'image pour couvrir complètement le cadre, en conservant les proportions */
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
 }
 
 @media (max-device-width:768px) and (orientation: landscape) {
@@ -661,29 +657,29 @@ img {
 @media screen and (max-width: 514px) {
   .home__img {
     display: flex;
-    justify-content: flex-end; /* Aligner le contenu à droite */
-    align-items: flex-start; /* Aligner le contenu en haut */
-    margin-top: 20px; /* Marge supérieure pour l'espace */
+    justify-content: flex-end; 
+    align-items: flex-start; 
+    margin-top: 20px; 
   }
 
   .home__blob {
-    width: 50px; /* Définir une largeur plus petite */
-    height: 70px; /* Laisser la hauteur s'ajuster automatiquement */
-    margin-top: 100px; /* Ajuster la marge supérieure pour déplacer l'élément vers le bas */
-    margin-right: 10px; /* Marge à droite pour l'espace */
+    width: 50px;
+    height: 70px; 
+    margin-top: 100px;
+    margin-right: 10px; 
   }
   
 
   .home__social {
     display: flex;
-    flex-direction: row; /* Alignement horizontal */
-    justify-content: flex-start; /* Alignement à gauche */
-    align-items: center; /* Centrage vertical */
-    margin-top: 20px; /* Marge supérieure */
+    flex-direction: row; 
+    justify-content: flex-start; 
+    align-items: center; 
+    margin-top: 20px; 
   }
 
   .home__social-icon {
-    margin-right: 30px; /* Marge entre les icônes */
+    margin-right: 30px; 
   }
 }
 @media screen and (max-width: 514px) {
@@ -696,20 +692,20 @@ img {
   }
 
   .footer__title {
-    font-size: 10px; /* Taille de police plus petite pour le titre */
+    font-size: 10px;
   }
 
   .footer__social {
-    margin-top: 10px; /* Marge supérieure entre le titre et les icônes */
+    margin-top: 10px;
   }
 
   .footer__icon {
-    margin: 0 5px; /* Marge horizontale entre les icônes */
+    margin: 0 5px;
   }
 
   .footer__copy {
-    font-size: 7px; /* Taille de police plus petite pour le texte de copyright */
-    margin-top: 1px; /* Marge supérieure entre les icônes et le texte de copyright */
+    font-size: 7px; 
+    margin-top: 1px; 
   }
 }
 
@@ -719,19 +715,19 @@ img {
 
 /* ===== ABOUT =====*/
 
-/* Pour aligner et espacer les boutons dans about__buttons-container */
+
 .about__buttons-container {
   display: flex;
-  justify-content: flex-end; /* Aligner les boutons à droite */
-  margin-right: 20px; /* Ajustez la marge à votre préférence */
+  justify-content: flex-end; 
+  margin-right: 20px; 
 }
 
 .about__buttons {
   display: flex;
-  gap: 20px; /* Espacement entre les boutons */
+  gap: 20px; 
 }
 .button {
-  /* Styles des boutons */
+  
   background-color: #007bff;
   color: #fff;
   padding: 10px 20px;
@@ -742,7 +738,7 @@ img {
   font-weight: bold;
   transition: all 0.3s ease;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
-  width: 50%; /* Pleine largeur pour chaque bouton */
+  width: 50%; 
 }
 
 .button:hover {
@@ -753,12 +749,12 @@ img {
   .about__buttons {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centre les boutons horizontalement */
-    gap: 10px; /* Espacement entre les boutons */
+    align-items: center; 
+    gap: 10px; 
   }
 
   .button {
-    width: 100%; /* Pleine largeur pour chaque bouton */
+    width: 100%; 
   }
 }
 
@@ -766,23 +762,23 @@ img {
 /* ABOUT */
 
 .about__img img {
-  max-width: 90%; /* ajustez cette valeur selon vos besoins */
-  height: auto; /* garde l'aspect ratio de l'image */
+  max-width: 90%; 
+  height: auto; 
 }
 .about__container {
   display: flex;
-  flex-direction: row; /* Les éléments enfants sont disposés en ligne */
-  justify-content: space-between; /* Espacement égal entre les éléments */
-  align-items: center; /* Alignement vertical des enfants */
+  flex-direction: row; 
+  justify-content: space-between; 
+  align-items: center;
 }
 
 .about__buttons-container {
   display: flex;
-  justify-content: center; /* Centre les boutons horizontalement */
-  width: 100%; /* Assurez-vous que le conteneur prend toute la largeur */
+  justify-content: center; 
+  width: 100%; 
 }
 .section-title {
-  color: #333333; /* Noir foncé */
+  color: #333333; 
 }
 .about__banner {
   background-color: #f5f5f5;
@@ -792,77 +788,135 @@ img {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  transform: translateX(10px); /* Décaler légèrement à droite */
-  border-radius: 20px; /* Coins arrondis */
+  transform: translateX(10px); 
+  border-radius: 20px; 
 }
 .about_work__img img {
-  width: 250px; /* La largeur que vous souhaitez pour vos images */
-  height: auto; /* Cela gardera le rapport hauteur/largeur des images */
+  width: 250px; 
+  height: auto; 
   margin-left: auto;
 }
 @media (max-width: 514px) {
   /* ABOUT */
   .about__img img {
-      max-width: 90%; /* Ajuster pour occuper la majorité de la largeur */
-      height: auto; /* Garde l'aspect ratio de l'image */
-      display: block; /* Assurez-vous que les images s'affichent correctement */
-      margin: 10px auto; /* Centre l'image horizontalement avec de l'espace en haut et en bas */
+      max-width: 90%; 
+      height: auto; 
+      display: block; 
+      margin: 10px auto; 
   }
   .about__container {
-      flex-direction: column; /* Changez en colonne pour les écrans plus petits */
-      padding: 10px; /* Ajoutez un peu de padding sur les côtés */
+      flex-direction: column; 
+      padding: 10px; 
   }
   .about__buttons-container {
-      flex-direction: column; /* Boutons empilés verticalement */
-      margin-top: 10px; /* Espacement au-dessus des boutons */
+      flex-direction: column; 
+      margin-top: 10px; 
   }
   .section-title {
-      font-size: 1.5rem; /* Diminuez la taille du texte pour les petits écrans */
-      text-align: center; /* Centre le titre */
+      font-size: 1.5rem;
+      text-align: center; 
   }
   .about__banner {
-      padding: 5px; /* Réduisez le padding */
-      width: 90%; /* Utilisez toute la largeur disponible */
-      margin-top: 5px; /* Réduisez l'espace au-dessus */
-      transform: none; /* Annulez le décalage à droite */
-      margin-left: auto; /* Centre le banner */
-      margin-right: auto; /* Centre le banner */
+      padding: 5px;
+      width: 90%; 
+      margin-top: 5px; 
+      transform: none;
+      margin-left: auto;
+      margin-right: auto; 
   }
   .about_work__img img {
-    width: 0%; /* Utilisez la pleine largeur pour les images dans le travail */
+    width: 0%; 
     height: auto;
     display: block;
-    margin: 0 auto; /* Centrez les images sans marge supplémentaire */
-    margin-top: 10px; /* Espace au-dessus de l'image */
+    margin: 0 auto; 
+    margin-top: 10px; 
 }
 }
 /* CARREER */
 
 .about_carreer__img img {
-  max-width: 400px; /* Ou la largeur maximale que vous souhaitez pour l'image */
-  width: auto; /* Cela permettra à l'image de s'étendre à la largeur maximale */
-  height: auto; /* Pour maintenir le ratio */
-  display: block; /* L'image sera traitée comme un bloc */
-  margin: 0 auto; /* Centrer l'image dans son conteneur */
+  max-width: 514px; 
+  width: auto; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto; 
 }
-
-
-
-
 
 .about_career__container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Espacement égal entre les éléments */
+  justify-content: space-between; 
 }
 
 .about_career__img {
-  flex: 8; /* Les images prendront une part égale de l'espace disponible */
-  max-width: 200px; /* Ou la taille fixe que vous souhaitez pour les images */
+  flex: 8; 
+  max-width: 200px; 
   margin: 10px;
 }
 
 .text-container {
-  flex: 3; /* Les conteneurs de texte prendront plus d'espace que les images */
-  margin: 10px;
+  flex: 3; 
+}
+
+
+.about__banner_carreer {
+  background-color: #f5f5f5;
+  border: 1px solid #bab3b3;
+  padding: 70px;
+  margin-top: 50px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateX(10px); 
+  border-radius: 20px; 
+}
+
+
+/* Styles généraux pour les images dans les conteneurs de carrière */
+.about_career__img img {
+  width: 100%; /* Permet aux images de s'adapter à la largeur du conteneur */
+  max-width: 200px; /* Limite la taille maximale des images sur les grands écrans */
+}
+/* Media Queries pour les appareils mobiles */
+@media (max-width: 768px) {
+  .about_career__container {
+      flex-direction: column;
+      text-align: left;
+  }
+  .section-container {
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    padding: 4px; 
+    max-width: 90%;
+    margin: 0 auto; 
+    margin: 20px auto;
+    height: 50%;
+  
+  }
+
+  .text-container {
+      order: 2;
+      width: 100%; /* Utilise toute la largeur disponible */
+      height: 100%;
+  }
+
+  .about_career__img {
+      order: 2;
+      width: 100%; /* Permet à l'image de s'adapter à la largeur du conteneur de lien */
+      max-width: 80px; /* Réduit considérablement la taille de l'image */
+      display: block; /* Assure que l'image est affichée comme un bloc */
+      margin: 10px auto 0; /* Centre l'image horizontalement et ajoute de l'espace au-dessus */
+  }
+}
+
+
+/* Adaptations pour les très petits écrans */
+@media (max-width: 480px) {
+  .about_career__img img {
+      max-width: 100px; /* Réduction supplémentaire pour les très petits écrans */
+  }
+
+  .text-container h3, .text-container p {
+      font-size: 12px; /* Réduction de la taille du texte pour améliorer la lisibilité */
+  }
 }
