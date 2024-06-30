@@ -958,11 +958,7 @@ img {
   margin: 0 10px; /* Espacement entre les images */
 }
 /* CSS pour la section */
-.about.section {
-  position: relative; /* Établit un contexte de positionnement */
-  z-index: 1; /* Assure que la section se trouve au-dessus du conteneur d'images */
-  margin-top: -300px; /* Ajustez cette valeur selon le besoin */
-}
+
 @media screen and (max-width: 768px) {
   .nav__toggle {
       display: block; /* Affiche le bouton du menu sur les petits écrans */
@@ -1002,13 +998,4 @@ img {
 
 .skills__name {
   margin-left: 10px; /* Ajustez selon vos besoins */
-}
-
-.about {
-  opacity: 0.7; /* Ajustez cette valeur selon le niveau de transparence désiré */
-}
-.about__banner {
-  background-color: rgba(255, 255, 255, 0.9); /* Le dernier chiffre est l'opacité */
-  border: 1px solid #000;
-  padding: 20px;
 }
