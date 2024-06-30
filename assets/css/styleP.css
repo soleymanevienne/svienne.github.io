@@ -338,7 +338,7 @@ img {
   overflow: hidden;
 }
 .work__img img {
-  transition: 111100000000000s;
+  transition: 111s;
 }
 .work__img img:hover {
   transform: scale(1.2);
@@ -938,4 +938,62 @@ img {
 
 .skill-icon {
     margin-right: 10px; /* Ajustez la valeur de la marge comme souhaité */
+}
+
+.scrollable-content {
+  max-height: 500px; /* Hauteur maximale du contenu défilable */
+  overflow-y: auto; /* Active le défilement vertical si le contenu dépasse la hauteur maximale */
+  margin: 20px auto; /* Centrage et espacement autour du conteneur */
+  border: 2px solid #18191a; /* Bordure pour visualiser le conteneur */
+  padding: 10px; /* Espacement à l'intérieur du conteneur */
+}
+
+.scrollable-text {
+  height: 400px; /* Hauteur fixe pour le conteneur */
+  overflow-y: scroll; /* Active le défilement vertical */
+  margin: 20px; /* Espacement autour du conteneur */
+  padding: 10px; /* Espacement à l'intérieur du conteneur */
+  border: 1px solid #ccc; /* Bordure du conteneur */
+  border-radius: 5px; /* Arrondissement des coins du conteneur */
+  width: 50%;
+  position: center; 
+}
+.content-container {
+  display: flex; /* Active Flexbox */
+  justify-content: space-between; /* Espacement entre le texte et l'image */
+}
+
+.scrollable-text, .image-container {
+  flex: 1; /* Permet aux enfants de prendre une part égale de l'espace disponible */
+}
+
+.skills__img {
+  width: 100%; /* Ajuste la largeur de l'image à celle de son conteneur */
+  height: auto; /* Garde le ratio de l'image */
+  border: 2px solid #18191a;
+}
+/* Style pour la scrollbar */
+.sidebar::-webkit-scrollbar {
+  width: 8px; /* Largeur de la scrollbar */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #4e576a; /* Couleur de la poignée */
+  border-radius: 4px; /* Arrondi de la poignée */
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background-color: #333a4d; /* Couleur de la piste */
+}
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #dfe4ee;
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #333a4d;
 }
