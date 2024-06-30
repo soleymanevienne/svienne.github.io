@@ -125,6 +125,7 @@ img {
   display: grid;
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
+  height: auto;
 }
 
 .l-header {
@@ -212,6 +213,7 @@ img {
   padding: 4rem 0 5rem;
   padding-top: 2rem;
   margin-top: -60px;
+
 }
 .home__data {
   align-self: center;
@@ -928,4 +930,72 @@ img {
   .text-container h3, .text-container p {
       font-size: 12px; /* Réduction de la taille du texte pour améliorer la lisibilité */
   }
+}
+
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #dfe4ee;
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #333a4d;
+}
+/* CSS pour le conteneur et les images */
+.images-container {
+  display: flex; /* Aligner les divs des images côte à côte */
+  justify-content: center; /* Centrer les images dans le conteneur */
+  align-items: center; /* Aligner les images verticalement */
+}
+
+.image img {
+  max-width: 100%; /* Assurez-vous que les images ne dépassent pas leur conteneur */
+  height: auto; /* Conserver les proportions des images */
+  margin: 0 10px; /* Espacement entre les images */
+}
+/* CSS pour la section */
+.about.section {
+  position: relative; /* Établit un contexte de positionnement */
+  z-index: 1; /* Assure que la section se trouve au-dessus du conteneur d'images */
+  margin-top: -300px; /* Ajustez cette valeur selon le besoin */
+}
+@media screen and (max-width: 768px) {
+  .nav__toggle {
+      display: block; /* Affiche le bouton du menu sur les petits écrans */
+  }
+  .nav__list {
+      display: none; /* Cache la navigation principale sur les petits écrans */
+  }
+  .images-container {
+      flex-direction: column; /* Empile les images verticalement */
+  }
+  .image {
+      width: 100%; /* Ajuste la largeur des images pour qu'elles prennent toute la largeur disponible */
+      margin-bottom: 20px; /* Ajoute un espace entre les images */
+  }
+  .about__banner, .about__container {
+      padding: 10px; /* Réduit le padding sur les petits écrans */
+  }
+  .section-title {
+      font-size: 24px; /* Ajuste la taille de la police pour les titres */
+  }
+  /* Ajoutez d'autres styles spécifiques aux mobiles ici */
+}.home {
+  position: relative;
+  top: -90px; /* Ajustez cette valeur selon le besoin */
+}
+
+
+.scrollable-text, .image-container {
+  flex: 1; /* Permet aux enfants de prendre une part égale de l'espace disponible */
+}
+
+.skills__img {
+  width: 100%; /* Ajuste la largeur de l'image à celle de son conteneur */
+  height: auto; /* Garde le ratio de l'image */
+  border: 2px solid #18191a;
 }
