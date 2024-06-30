@@ -964,7 +964,7 @@ img {
       display: block; /* Affiche le bouton du menu sur les petits écrans */
   }
   .nav__list {
-      display: none; /* Cache la navigation principale sur les petits écrans */
+      display: active; /* Cache la navigation principale sur les petits écrans */
   }
   .images-container {
       flex-direction: column; /* Empile les images verticalement */
