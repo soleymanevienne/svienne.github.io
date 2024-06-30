@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styleP.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="assets\img\about-removebg-preview.png">
+    
+    <title>Portfolio website</title>
+</head>
+<body>
+    <section class="work section" id="work">
+        <h2 class="section-title">Fabric enterprise project</h2>
+        <div class="content-container"> <!-- Conteneur parent pour Flexbox -->
+            <section class="scrollable-text">
+                <!-- Votre contenu texte ici -->
+                <h2>Résumé du Projet Microsoft Fabric pour l'Entreprise</h2>
+                <p>Dans le cadre de mon projet visant à améliorer les prévisions de ventes pour notre entreprise, j'utilise la plateforme Microsoft Fabric pour créer un pipeline de données robuste et automatisé. Voici un aperçu des étapes et des composants clés de ce projet :</p>
+            
+                <h3>Objectif du Projet</h3>
+                <p>L'objectif principal est de développer un système de prévisions de ventes automatisé, en exploitant les technologies de gestion et d'analyse des données de Microsoft Fabric. Ce système me permettra de collecter, traiter, et visualiser les données de ventes de manière efficace et fiable.</p>
+            
+                <h3>Extraction des Données avec Data Flow Gen</h3>
+                <p>J'utilise Data Flow Gen pour l'extraction des données sous forme d'API REST. Cette étape est cruciale pour collecter les données brutes nécessaires à nos analyses. Les API REST permettent d'accéder aux données en temps réel, garantissant ainsi la fraîcheur et la pertinence des informations extraites.</p>
+            
+                <h3>Gestion des Données : Bronze, Silver, et Gold</h3>
+                <p>Une fois les données extraites, elles sont organisées en trois niveaux de gestion :</p>
+                <ul>
+                    <li><strong>Bronze</strong> : Cette couche contient les données brutes extraites directement des API REST. Les données sont stockées sans transformation majeure, assurant ainsi une source fiable et intègre des informations d'origine.</li>
+                    <li><strong>Silver</strong> : À ce niveau, les données subissent des transformations et des nettoyages pour corriger les erreurs et améliorer la qualité des informations. Les données sont standardisées et enrichies pour faciliter les analyses ultérieures.</li>
+                    <li><strong>Gold</strong> : La couche Gold représente les données hautement transformées et prêtes à être utilisées pour des analyses avancées et des visualisations. Ces données sont optimisées pour les rapports et les tableaux de bord, assurant des performances maximales et une interprétation facile des résultats.</li>
+                </ul>
+            
+                <h3>Visualisation des Données et Dashboard Automatisé</h3>
+                <p>Pour la représentation finale des données, je crée des tableaux de bord automatisés. Ces dashboards fournissent des visualisations claires et interactives des prévisions de ventes, permettant aux décideurs de l'entreprise de prendre des décisions éclairées basées sur des données précises et à jour.</p>
+            
+                <h3>Conclusion</h3>
+                <p>Ce projet, réalisé sur la plateforme Microsoft Fabric, permet à notre entreprise de disposer d'un système de prévisions de ventes sophistiqué et automatisé. En intégrant des techniques avancées d'extraction, de gestion, et de visualisation des données, j'assure une meilleure compréhension des tendances de vente et une prise de décision stratégique plus efficace.</p>
+            </section>
+            
+            <div class="image-container"> <!-- Conteneur pour l'image -->
+                <img src="assets/img/image (1).png" alt="" class="skills__img">
+            </div>
+        </div>
+    </section>
+<div class="images-container" style="display: flex; justify-content: center; gap: 20px;"> <!-- Nouveau conteneur pour les images -->
+    <img src="assets/img/Capture9.PNG" class="skills__img"alt="" style="max-width: 45%; height: auto;">
+    
+    <img src="assets/img/Capture10.PNG"class="skills__img" alt="" style="max-width: 45%; height: auto;">
+</div>
+</div> <!-- Fin de content-container -->
+    <!-- Bouton Retour Portfolio -->
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="portfolio.html" style="display: inline-block; background-color: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Retour au Portfolio</a>
+    </div>
+    <br>
+    <br>
+    <footer class="footer">
+        <p class="footer__title" style="font-size: 13px;">+33 06 17 86 29 53</p>
+        <div class="footer__social">
+            <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+        </div>
+        <p class="footer__copy">&#169; soleymanevienne.com</p>
+    </footer>
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
