@@ -1040,3 +1040,18 @@ img {
 
 
 
+
+.introduction {
+  background-color: rgba(255, 255, 255, 0.5); /* Blanc avec 50% de transparence */
+  padding: 20px; /* Espacement intérieur */
+}
+
+.section-container {
+  background-color: rgba(255, 255, 255, 0.8); /* Blanc avec 80% d'opacité */
+  padding: 20px; /* Ajoute de l'espacement à l'intérieur du conteneur */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour du relief */
+}
+.about__container.bd-grid2{
+  background-color: rgba(255, 255, 255, 0.8); /* Blanc avec 80% d'opacité */
+  padding: 20px; /* Ajoute de l'espacement à l'intérieur du conteneur */
+}
