@@ -961,7 +961,7 @@ img {
 .about.section {
   position: relative; /* Établit un contexte de positionnement */
   z-index: 1; /* Assure que la section se trouve au-dessus du conteneur d'images */
-  margin-top: -300px; /* Ajustez cette valeur selon le besoin */
+  margin-top: -400px; /* Ajustez cette valeur selon le besoin */
 }
 @media screen and (max-width: 768px) {
   .nav__toggle {
@@ -984,7 +984,9 @@ img {
       font-size: 24px; /* Ajuste la taille de la police pour les titres */
   }
   /* Ajoutez d'autres styles spécifiques aux mobiles ici */
-}.home {
+}
+
+.home {
   position: relative;
   top: -90px; /* Ajustez cette valeur selon le besoin */
 }
@@ -1034,4 +1036,7 @@ img {
     text-align: center;
   }
 }
+
+
+
 
