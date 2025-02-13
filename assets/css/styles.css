@@ -1055,3 +1055,15 @@ img {
   background-color: rgba(255, 255, 255, 0.8); /* Blanc avec 80% d'opacité */
   padding: 20px; /* Ajoute de l'espacement à l'intérieur du conteneur */
 }
+.cv-buttons {
+  display: inline-flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Si vous voulez que les boutons s'affichent l'un en dessous de l'autre sur mobile */
+@media screen and (max-width: 768px) {
+  .cv-buttons {
+      flex-direction: column;
+  }
+}
